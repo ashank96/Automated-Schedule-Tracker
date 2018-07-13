@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SelectActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/faculty"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/faculty"
+        app:civ_circle_background_color="@android:color/holo_blue_bright"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FACULTY"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/student"
+        android:src="@drawable/student"
+        app:civ_circle_background_color="@android:color/holo_blue_bright"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+</LinearLayout>

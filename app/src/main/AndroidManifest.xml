@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aloofwillow.automated_schedule_tracker_project_notification_firestore">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Faculty.FacultyMainActivity" />
+        <activity android:name=".Faculty.FacultyLoginActivity" />
+        <activity android:name=".Faculty.FacultyRegisterActivity" />
+        <activity android:name=".Student.StudentLoginActivity" />
+        <activity android:name=".Student.StudentMainActivity" />
+        <activity android:name=".Student.StudentRegisterActivity" />
+        <activity android:name=".Student.StudentFacultyActivity" />
+        <activity android:name=".Faculty.NotificationActivity">
+            <intent-filter>
+                <action android:name="com.google.firebase.NotificationTarget" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Splash_Screen"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
